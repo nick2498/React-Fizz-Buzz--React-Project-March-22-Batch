@@ -24,14 +24,26 @@ const App = () => {
       </button>
       <br />
       <br />
-      <div id="counter">
-        {(state % 15 === 0 && <div className="fizzbuzz">{state}</div>) ||
-          (state % 5 === 0 && <div className="buzz">{state}</div>) ||
-          (state % 3 === 0 && <div className="fizz">{state}</div>) ||
-          (state % 3 !== 0 && state % 5 !== 0 && state % 15 !== 0 && (
-            <div className="normal">{state}</div>
-          ))}
-      </div>
+      {(state % 15 === 0 && (
+        <div id="counter" className="fizzbuzz">
+          {state}
+        </div>
+      )) ||
+        (state % 5 === 0 && (
+          <div id="counter" className="buzz">
+            {state}
+          </div>
+        )) ||
+        (state % 3 === 0 && (
+          <div id="counter" className="fizz">
+            {state}
+          </div>
+        )) ||
+        (state % 3 !== 0 && state % 5 !== 0 && state % 15 !== 0 && (
+          <div id="counter" className="normal">
+            {state}
+          </div>
+        ))}
       <br />
       <button id="decrement" onClick={() => disptch("decrement")}>
         Decrement
