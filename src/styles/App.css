@@ -1,15 +1,42 @@
-.fizz{
-    background-color: red;
+.fizz {
+  background-color: red;
 }
 
-.buzz{
-    background-color: blue;
+.buzz {
+  background-color: blue;
 }
 
-.fizzbuzz{
-    background-color: yellow;
+.fizzbuzz {
+  background-color: yellow;
 }
 
-.normal{
-    background-color: pink;
+.normal {
+  background-color: pink;
+}
+
+#main {
+  text-align: center;
+  margin-top: 20%;
+}
+
+#counter {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+button {
+  font-size: 20px;
+  border: none;
+  padding: 7px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#increment {
+  background-color: rgb(80, 80, 255);
+}
+
+#decrement {
+  background-color: rgb(252, 89, 89);
 }
