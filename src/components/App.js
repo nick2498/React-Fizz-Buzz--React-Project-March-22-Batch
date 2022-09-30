@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
-import { render } from "react-dom";
 import "../styles/App.css";
+
 const App = () => {
   const initialState = 1;
 
